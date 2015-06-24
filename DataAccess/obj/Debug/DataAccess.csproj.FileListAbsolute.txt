@@ -1,0 +1,41 @@
+G:\TinhThanh\DuAnSanGolf\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+G:\TinhThanh\DuAnSanGolf\DataAccess\bin\Debug\DataAccess.dll
+G:\TinhThanh\DuAnSanGolf\DataAccess\bin\Debug\DataAccess.pdb
+G:\TinhThanh\DuAnSanGolf\DataAccess\bin\Debug\Core.dll
+G:\TinhThanh\DuAnSanGolf\DataAccess\obj\Debug\DataAccess.dll
+G:\TinhThanh\DuAnSanGolf\DataAccess\obj\Debug\DataAccess.pdb
+G:\TinhThanh\Hotel1001\DataAccess\bin\Debug\DataAccess.dll
+G:\TinhThanh\Hotel1001\DataAccess\bin\Debug\DataAccess.pdb
+G:\TinhThanh\Hotel1001\DataAccess\bin\Debug\Core.dll
+G:\TinhThanh\Hotel1001\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+G:\TinhThanh\Hotel1001\DataAccess\obj\Debug\DataAccess.dll
+G:\TinhThanh\Hotel1001\DataAccess\obj\Debug\DataAccess.pdb
+G:\TinhThanh\Project Myself\Hotel1001\DataAccess\bin\Debug\DataAccess.dll
+G:\TinhThanh\Project Myself\Hotel1001\DataAccess\bin\Debug\DataAccess.pdb
+G:\TinhThanh\Project Myself\Hotel1001\DataAccess\bin\Debug\Core.dll
+G:\TinhThanh\Project Myself\Hotel1001\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+G:\TinhThanh\Project Myself\Hotel1001\DataAccess\obj\Debug\DataAccess.dll
+G:\TinhThanh\Project Myself\Hotel1001\DataAccess\obj\Debug\DataAccess.pdb
+G:\TinhThanh\Project Myself\Hotel1001\DataAccess\bin\Debug\en-US\DataAccess.resources.dll
+G:\TinhThanh\Project Myself\Hotel1001\DataAccess\bin\Debug\ru-Ru\DataAccess.resources.dll
+G:\TinhThanh\Project Myself\Hotel1001\DataAccess\bin\Debug\vi-VN\DataAccess.resources.dll
+G:\TinhThanh\Project Myself\Hotel1001\DataAccess\obj\Debug\DataAccess.Lang.LangResource.resources
+G:\TinhThanh\Project Myself\Hotel1001\DataAccess\obj\Debug\DataAccess.Lang.LangResource.en-US.resources
+G:\TinhThanh\Project Myself\Hotel1001\DataAccess\obj\Debug\DataAccess.Lang.LangResource.ru-Ru.resources
+G:\TinhThanh\Project Myself\Hotel1001\DataAccess\obj\Debug\DataAccess.Lang.LangResource.vi-VN.resources
+G:\TinhThanh\Project Myself\Hotel1001\DataAccess\obj\Debug\DataAccess.csproj.GenerateResource.Cache
+G:\TinhThanh\Project Myself\Hotel1001\DataAccess\obj\Debug\en-US\DataAccess.resources.dll
+G:\TinhThanh\Project Myself\Hotel1001\DataAccess\obj\Debug\ru-Ru\DataAccess.resources.dll
+G:\TinhThanh\Project Myself\Hotel1001\DataAccess\obj\Debug\vi-VN\DataAccess.resources.dll
+G:\TinhThanh\Project Myself\NhuBaoRestaurant\DataAccess\bin\Debug\DataAccess.dll
+G:\TinhThanh\Project Myself\NhuBaoRestaurant\DataAccess\bin\Debug\DataAccess.pdb
+G:\TinhThanh\Project Myself\NhuBaoRestaurant\DataAccess\bin\Debug\Core.dll
+G:\TinhThanh\Project Myself\NhuBaoRestaurant\DataAccess\obj\Debug\DataAccess.dll
+G:\TinhThanh\Project Myself\NhuBaoRestaurant\DataAccess\obj\Debug\DataAccess.pdb
+G:\TinhThanh\Project Myself\NhuBaoRestaurant\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+G:\TinhThanh\Project Myself\NhaHangTomato\DataAccess\bin\Debug\DataAccess.dll
+G:\TinhThanh\Project Myself\NhaHangTomato\DataAccess\bin\Debug\DataAccess.pdb
+G:\TinhThanh\Project Myself\NhaHangTomato\DataAccess\bin\Debug\Core.dll
+G:\TinhThanh\Project Myself\NhaHangTomato\DataAccess\obj\Debug\DataAccess.csprojResolveAssemblyReference.cache
+G:\TinhThanh\Project Myself\NhaHangTomato\DataAccess\obj\Debug\DataAccess.dll
+G:\TinhThanh\Project Myself\NhaHangTomato\DataAccess\obj\Debug\DataAccess.pdb

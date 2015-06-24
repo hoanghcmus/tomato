@@ -1,0 +1,59 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/View/MasterNoneSlide.master" AutoEventWireup="true" CodeFile="MasterNoneCuisineBlock.master.cs" Inherits="View_MasterNoneCuisineBlock" %>
+
+<%-- Header content --%>
+<asp:Content ID="ContentHeader" ContentPlaceHolderID="HeadExtender" runat="Server">
+    <asp:ContentPlaceHolder ID="HeadExtender" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+
+
+
+<%-- Left content --%>
+<asp:Content ID="LeftContent" runat="server" ContentPlaceHolderID="LeftBlockContentPlaceHolder">
+    <asp:ContentPlaceHolder ID="LeftBlockContentPlaceHolder" runat="server">
+    </asp:ContentPlaceHolder>
+    <%-- Vertical cuisine menu --%>
+    <div class="vnavigation">
+        <div class="block-header">
+            <h1><%=Resources.Resource.menu %>
+            </h1>
+        </div>
+        <div class="block-content">
+            <div class="block-content-wrap vnavi">
+                <ul>
+                    <asp:Repeater runat="server" ID="rptProduct">
+                        <ItemTemplate>
+                            <li>
+                                <a href="<%#ShowMainMenu(Container.DataItem,"MenuDuongDan") %>"><span><%#ShowMainMenu(Container.DataItem,"MenuTieuDe") %></span></a>
+                            </li>
+                        </ItemTemplate>
+                    </asp:Repeater>
+                </ul>
+            </div>
+        </div>
+    </div>
+</asp:Content>
+
+<%-- Right Main content --%>
+<asp:Content ID="ContentMain" ContentPlaceHolderID="MainContent" runat="Server">
+    <asp:ContentPlaceHolder ID="MainContent" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+
+
+
+
+<%-- Footer content --%>
+<asp:Content ID="ContentFooter" ContentPlaceHolderID="FootExtender" runat="Server">
+    <%--Scroll down ...px  --%>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $(window).scrollTop(500);
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="FootExtender" runat="server">
+    </asp:ContentPlaceHolder>
+
+</asp:Content>

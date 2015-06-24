@@ -1,0 +1,138 @@
+﻿.local-tour-wraper, .global-tour-wraper
+{
+    border-bottom: 1px dashed;
+    float: left;
+    padding-bottom: 18px;
+    width: 100%;
+    /*border: 1px solid #000;*/
+}
+
+.tour-cat-title
+{
+    margin: 4px;
+}
+
+    .tour-cat-title h3
+    {
+    }
+
+    .tour-cat-title a
+    {
+        color: #009bd5;
+    }
+
+        .tour-cat-title a:hover
+        {
+            text-decoration: underline;
+        }
+
+.tour-box
+{
+    /*border: 1px solid #000;*/
+    float: left;
+    height: 200px;
+    margin-bottom: 0.439%;
+    margin-left: 0.439%;
+    position: relative;
+    width: 32.868%;
+}
+
+.tour-opacity
+{
+    background-color: #000;
+    bottom: 0;
+    float: left;
+    height: 66px;
+    opacity: 0.3;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.tour-box img
+{
+    width: 100%;
+    height: 100%;
+}
+
+.tour-infor
+{
+    bottom: 0;
+    float: left;
+    height: 66px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.tour-title
+{
+    background-color: transparent;
+    float: left;
+    height: 40px;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 98%;
+}
+
+    .tour-title a
+    {
+        color: #ffffff;
+    }
+
+        .tour-title a:hover
+        {
+            font-weight: bold;
+        }
+
+.tour-price
+{
+    background-color: transparent;
+    color: violet;
+    float: left;
+    height: 25px;
+    padding-left: 1%;
+    padding-right: 1%;
+    width: 98%;
+}
+
+.tour-detail
+{
+    text-align: justify;
+}
+
+.tour-detail-title
+{
+    color: #009bd5;
+}
+
+.view-all
+{
+    float: right;
+    color: #009bd5;
+    margin-bottom: -12px;
+    margin-top: 9px;
+}
+
+    .view-all:hover
+    {
+        text-decoration: underline;
+    }
+
+.go-back
+{
+    float: right;
+    color: #6793ca;
+    font-weight: bold;
+    background-color: rgba(189,199,210,0.4);
+    border-radius: 3px;
+    padding-left: 9px;
+    padding-right: 9px;
+    padding: 5px 10px;
+}
+
+    .go-back:hover
+    {
+        background-color: rgba(0,155,213,0.6);
+        color: #FFF;
+    }

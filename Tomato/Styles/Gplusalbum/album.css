@@ -1,0 +1,210 @@
+/*---------------------------------------------------------------------------*/
+/*----------------------------------------------------------- css list photo */
+/*---------------------------------------------------------------------------*/
+.listalbum
+{
+    margin:0 auto;
+    width: 980px;
+    text-align:center;
+}
+.itemalbum
+{
+	width: 290px;
+	height:200px;
+    float:left;
+    margin:8px 0px 10px 20px;
+    border:1px solid #239bbd;
+    background-color:#eefbff;
+    -khtml-border-radius: 3px; /* Konqueror */
+    -moz-border-radius: 3px; /* Firefox */
+    -webkit-border-radius: 3px; /* Safari & Google Chrome */
+    -border-radius: 3px; /* Opera */
+}
+.itemalbum:hover
+{
+    background-color:#dcf7ff;
+}
+.titlealbum
+{
+    width:280px;
+    height:28px;
+    padding:5px;
+    margin-left:-1px;
+    margin-top:7px;
+    text-align:center;
+    border:1px solid #239bbd;
+    background-color:#dcf7ff;
+}
+.titlealbum a
+{
+    position:relative;
+    font-size: 12pt;
+    font-weight: bold;
+    color:#00607b;
+    z-index:999;
+    text-decoration:none;
+}
+.titlealbum a:hover
+{
+    text-decoration:underline;
+}
+.image_stack { /* css style for photo stack */
+	width: 298px;
+	height:160px;
+	position: relative;
+}
+.image_stack img { /* css style for photo stack */
+    width: 190px;
+	height: 100px;
+	position: absolute;
+	border: 3px solid #fff7cc;
+	box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+	z-index: 99;
+	/* Firefox */
+	-moz-transition: all 0.2s ease;
+	/* WebKit */
+	-webkit-transition: all 0.2s ease;
+	/* Opera */
+	-o-transition: all 0.2s ease;
+	/* Standard */
+	transition: all 0.2s ease;
+}
+.image_stack #photo1 {  /* position of last photo in the stack */
+	top: 20px;
+	left:65px;
+		-webkit-transform: rotate(8deg); /* safari and chrome */
+	-moz-transform: rotate(8deg);/*firefox browsers */
+	transform: rotate(8deg);/*other */
+	-ms-transform:rotate(8deg); /* Internet Explorer 9 */
+	-o-transform:rotate(8deg); /* Opera */
+}
+.image_stack #photo2 {/* position of middle photo in the stack */
+	top: 30px;
+	left: 50px;
+}
+.image_stack #photo3 {/* position of first photo at the top in the stack */
+	top: 40px;
+	left: 40px;
+			-webkit-transform: rotate(-8deg); /* safari and chrome */
+	-moz-transform: rotate(-8deg);/*firefox browsers */
+	transform: rotate(-8deg);/*other */
+	-ms-transform:rotate(-8deg); /* Internet Explorer 9 */
+	-o-transform:rotate(-8deg); /* Opera */
+}
+.image_stack .rotate1 {/* rotate last image 15 degrees to the right */
+	-webkit-transform: rotate(15deg); /* safari and chrome */
+	-moz-transform: rotate(15deg);/*firefox browsers */
+	transform: rotate(15deg);/*other */
+	-ms-transform:rotate(15deg); /* Internet Explorer 9 */
+	-o-transform:rotate(15deg); /* Opera */
+}
+.image_stack .rotate2 {/* css not used*/
+	-webkit-transform: rotate(0deg); /* safari and chrome */
+	-moz-transform: rotate(0deg);/*firefox browsers */
+	transform: rotate(0deg);/*other */
+	-ms-transform:rotate(0deg); /* Internet Explorer 9 */
+	-o-transform:rotate(0deg); /* Opera */
+}
+.image_stack .rotate3 {/*rotate first image 15 degrees to the left*/
+	-webkit-transform: rotate(-15deg); /* safari and chrome */
+	-moz-transform: rotate(-15deg); /*firefox browsers */
+	transform: rotate(-15deg);/*other */
+	-ms-transform:rotate(-15deg); /* Internet Explorer 9 */
+	-o-transform:rotate(-15deg); /* Opera */
+	cursor: pointer;
+}
+/*---------------------------------------------------------------------------*/
+/*--------------------------------------------------------- css Detail photo */
+/*---------------------------------------------------------------------------*/
+.gallery 
+{
+    position:relative;
+    width: 860px;
+    text-align:center;
+    margin-left:70px;
+    margin-bottom:20px;
+}
+.gallery  .iconphoto
+{
+    width:40px;
+    height:40px;
+    background: url( '../../Design/iconphoto.png' ) no-repeat;
+    position: absolute;
+    top: -18px;
+    left:165px;
+    z-index: 100;
+}
+.gallery a {
+    display: inline-block;
+    width: 195px;
+    height: 135px;
+    margin: 10px;
+    opacity: 1;
+    position: relative;
+    -khtml-user-drag: element;
+
+    /* CSS3 Prevent selections */
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+
+    /* CSS3 transition rules */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+}
+.gallery a img {
+    border: 5px solid #e2f9ff;
+    cursor: pointer;
+    display: block;
+    height: 100%;
+    left: 0px;
+    position: absolute;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+
+    /* CSS3 Box sizing property */
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    box-sizing: border-box;
+
+    /* CSS3 transition rules */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    /* CSS3 Box Shadow */
+    -moz-box-shadow: 2px 2px 4px #444;
+    -webkit-box-shadow: 2px 2px 4px #444;
+    -o-box-shadow: 2px 2px 4px #444;
+    box-shadow: 2px 2px 4px #444;
+}
+
+/* Custom CSS3 rotate transformation */
+.gallery a img {
+    -moz-transform: rotate(-3deg);
+    -webkit-transform: rotate(-3deg);
+    transform: rotate(-3deg);
+}
+.gallery a:hover img {
+    z-index: 5;
+    border: 5px solid #fff;
+    /* CSS3 transition rules */
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all 0.5s ease;
+
+    /* CSS3 transform rules */
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+}

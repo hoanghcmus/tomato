@@ -1,0 +1,60 @@
+﻿<%@ Master Language="C#" MasterPageFile="~/View/MasterNoneSlide.master" AutoEventWireup="true" CodeFile="MasterHasSlide.master.cs" Inherits="En_MasterHasSlide" %>
+
+
+<%-- Header content --%>
+<asp:Content ID="ContentHeader" ContentPlaceHolderID="HeadExtender" runat="Server">
+    <asp:ContentPlaceHolder ID="HeadExtender" runat="server">
+    </asp:ContentPlaceHolder>
+</asp:Content>
+
+
+
+<%-- Cuisine content --%>
+<asp:Content ID="CuisineContent" runat="server" ContentPlaceHolderID="CuisinePlaceHolder">
+    <asp:contentplaceholder id="CuisinePlaceHolder" runat="server">
+    </asp:contentplaceholder>
+    <%-- Cuisine block --%>
+    <div class="cuisine">
+        <div class="cuisine-wrap">
+
+            <asp:repeater runat="server" id="rptProduct">
+                <ItemTemplate>
+                    <div class="cuisine-item">
+                        <a href="<%#ShowMainMenu(Container.DataItem,"MenuDuongDan") %>" class="link">
+                            <div class="cuisine-figure">
+                                <img src="<%#Eval("HinhAnh") %>" alt="Cuisine" class="img" />
+                            </div>
+                            <div class="cuisine-title">
+                                <h1><%#ShowMainMenu(Container.DataItem,"MenuTieuDe") %></h1>
+                            </div>
+                        </a>
+                    </div>
+
+                </ItemTemplate>
+            </asp:repeater>
+
+        </div>
+    </div>
+
+</asp:Content>
+
+<%-- Right Main content --%>
+<asp:Content ID="ContentMain" ContentPlaceHolderID="MainContent" runat="Server">
+    <asp:contentplaceholder id="MainContent" runat="server">
+    </asp:contentplaceholder>
+</asp:Content>
+
+
+
+
+
+
+<%-- Footer content --%>
+<asp:Content ID="ContentFooter" ContentPlaceHolderID="FootExtender" runat="Server">
+   
+    <asp:contentplaceholder id="FootExtender" runat="server">
+       
+    </asp:contentplaceholder>
+
+</asp:Content>
+

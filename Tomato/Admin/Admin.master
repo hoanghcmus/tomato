@@ -1,0 +1,244 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Admin.master.cs" Inherits="Admin_Admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>Quản Trị Nhà Hàng Tomato</title>
+    <link rel="Shurtcut Icon" href="images/icon_admin.png" type="image/x-icon" />
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css" href="lib/font-awesome/css/font-awesome.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/theme.css" />
+    <link rel="stylesheet" type="text/css" href="stylesheets/page.css" />
+    <link href="stylesheets/album_video.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="lib/jquery-1.7.2.min.js"></script>
+    <script type="text/javascript" src="lib/bootstrap/js/bootstrap.js"></script>
+    <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
+    <script type="text/javascript" src="ckfinder/ckfinder.js"></script>
+    <script type="text/javascript" src="lib/ShowContent.js"></script>
+    <script src="lib/gplusalbum.app.js" type="text/javascript"></script>
+    <script src="lib/gplusalbum.jquery.min.1.5.js" type="text/javascript"></script>
+    <link href="../Styles/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" rel="stylesheet"
+        type="text/css" />
+    <script src="../Styles/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js" type="text/javascript"></script>
+    <script src="../Styles/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.pack.js"
+        type="text/javascript"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#various3").fancybox({
+                'width': 900,
+                'height': 580,
+                'autoScale': false,
+                'transitionIn': 'none',
+                'transitionOut': 'none',
+                'type': 'iframe'
+            });
+            $(".linknewemail").fancybox({
+                'width': 900,
+                'height': 580,
+                'autoScale': false,
+                'transitionIn': 'none',
+                'transitionOut': 'none',
+                'type': 'iframe'
+            });
+            $(".editarticle").fancybox({
+                'width': 900,
+                'height': 580,
+                'autoScale': false,
+                'transitionIn': 'none',
+                'transitionOut': 'none',
+                'type': 'iframe'
+            });
+        });
+    </script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server" style="margin: 0px; padding: 0px;">
+        <%-- div header--%>
+        <div class="navbar">
+            <div class="navbar-inner">
+                <ul class="nav pull-right">
+                    <li id="fat-menu" class="dropdown"><a href="#" role="button" class="dropdown-toggle"
+                        data-toggle="dropdown"><i class="icon-user"></i>
+                        <asp:Label ID="lbUser" Text="Nguyễn Ngọc Hoàng" runat="server" />
+                        <i class="icon-caret-down"></i></a>
+                        <ul class="dropdown-menu">
+                            <li><a tabindex="-1" href="MgerInfo.aspx">Trang cá nhân của tôi</a></li>
+                            <li class="divider"></li>
+                            <li><a tabindex="-1" href="MgerChangePasword.aspx">Đổi mật khẩu</a></li>
+                            <li class="divider"></li>
+                            <li><a tabindex="-1" href="../Admin/Refresh.aspx">Đăng xuất</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <div class="brand">
+                    <span class="first">Quản Trị&nbsp;&nbsp;</span> <span class="second">Website Nhà Hàng Tomato</span>
+                </div>
+            </div>
+        </div>
+        <%-- div menu left--%>
+        <div class="sidebar-nav">
+            <div class="clearfix">
+            </div>
+            <a href="Admin.aspx" class="nav-header"><i class="icon-home"></i>Trang chủ</a>
+
+            <asp:HyperLink ID="lnkMgerMenu" NavigateUrl="MgerMenu.aspx" class="nav-header" runat="server">
+            <i class="icon-asterisk">
+                </i>Quản lý thể loại menu</asp:HyperLink>
+
+            <asp:HyperLink ID="lnkMgerAr" NavigateUrl="#article" class="nav-header collapsed"
+                data-toggle="collapse" runat="server">
+            <i class="icon-edit"></i>Quản lý bài viết <i class="icon-chevron-up"></i>
+            </asp:HyperLink>
+            <ul id="article" class="nav nav-list collapse">
+                <li>
+                    <asp:HyperLink ID="lnkEditArticle" NavigateUrl="EditArticle.aspx" runat="server">
+            <i class="icon-pencil"></i>Thêm mới bài viết</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="lnkMgerArticle" NavigateUrl="MgerArticle.aspx" runat="server">
+            <i class="icon-credit-card"></i>Danh sách bài viết</asp:HyperLink>
+                </li>
+            </ul>
+
+
+
+            <asp:HyperLink ID="lnkMgerPro" NavigateUrl="#product" class="nav-header collapsed"
+                data-toggle="collapse" runat="server">
+                <i class="icon-asterisk"></i>Quản lý món ăn <span class="label label-info">
+                    <asp:Label ID="lbma" runat="server" Text="0" /></span>
+                <i class="icon-chevron-up"></i>
+            </asp:HyperLink>
+            <ul id="product" class="nav nav-list collapse">
+                <li>
+                    <asp:HyperLink ID="lnkEditProduct" NavigateUrl="EditProduct.aspx" runat="server">
+            <i class="icon-book"></i>Thêm món ăn</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="lnkMgerProduct" NavigateUrl="MgerProduct.aspx" runat="server">
+            <i class="icon-list-ol"></i>Danh sách món ăn</asp:HyperLink>
+                </li>
+                <%-- <li>
+                    <asp:HyperLink ID="lnkMgerShopping" NavigateUrl="MgerDatPhong.aspx" runat="server">
+                        <i class="icon-check"></i>Đặt phòng trực tuyến<span class="label label-info">
+                            <asp:Label ID="lbgh" runat="server" Text="0" /></span>
+                    </asp:HyperLink>
+
+                </li>--%>
+            </ul>
+
+
+            <asp:HyperLink ID="hlDatTiec" class="nav-header" NavigateUrl="MgerDatTiec.aspx?Status=0"
+                runat="server">
+                <i class="icon-shopping-cart"></i>Đặt bàn trực tuyến<span class="label label-info">
+                    <asp:Label ID="lbdt" runat="server" Text="0" /></span>
+            </asp:HyperLink>
+
+
+            <%--  <asp:HyperLink ID="lnkMgerTour" NavigateUrl="#tour" class="nav-header collapsed"
+                data-toggle="collapse" runat="server">
+                <i class="icon-shopping-cart"></i>Quản lý Tour <span class="label label-info">
+                    <asp:Label ID="lbtour" runat="server" Text="0" /></span><i class="icon-chevron-up"></i>
+            </asp:HyperLink>
+            <ul id="tour" class="nav nav-list collapse">
+                <li>
+                    <asp:HyperLink ID="lnkEditTour" NavigateUrl="EditTour.aspx" runat="server">
+            <i class="icon-book"></i>Thêm mới Tour</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="lnkMgerListTour" NavigateUrl="MgerTour.aspx" runat="server">
+            <i class="icon-list-ol"></i>Danh sách Tour</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="lnkMgerDatTour" NavigateUrl="MgerDatTour.aspx" runat="server">
+                        <i class="icon-check"></i>Đặt Tour trực tuyến<span class="label label-info">
+                            <asp:Label ID="lbdttt" runat="server" Text="0" /></span>
+                    </asp:HyperLink>
+                </li>
+            </ul>
+               
+            --%>
+
+
+
+            <asp:HyperLink ID="lnkMgerPhoto" NavigateUrl="#photos" class="nav-header collapsed"
+                data-toggle="collapse" runat="server">
+            <i class="icon-picture"></i>Quản lý Hình Ảnh <i class="icon-chevron-up"></i>
+            </asp:HyperLink>
+            <ul id="photos" class="nav nav-list collapse">
+                <li>
+                    <asp:HyperLink ID="lnkAddPhotos" NavigateUrl="EditPhoto.aspx" runat="server">
+            <i class="icon-pencil"></i>Thêm mới Album ảnh</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="lnkListPhotos" NavigateUrl="MgerPhoto.aspx" runat="server">
+            <i class="icon-credit-card"></i>Danh sách Album ảnh</asp:HyperLink>
+                </li>
+            </ul>
+
+            <asp:HyperLink ID="lnkSlideShow" class="nav-header" NavigateUrl="MgerSlideShow.aspx"
+                runat="server">
+            <i class="icon-star"></i>Hình ảnh chuyển động
+            </asp:HyperLink>
+
+
+            <%--       <asp:HyperLink ID="lnkMgerVideo" class="nav-header collapsed" data-toggle="collapse"
+            NavigateUrl="#videos" runat="server">
+            <i class="icon-camera"></i>Quản lý Video-Clips <i class="icon-chevron-up"></i>
+        </asp:HyperLink>
+        <ul id="videos" class="nav nav-list collapse">
+            <li>
+                <asp:HyperLink ID="linkAddVideo" NavigateUrl="EditVideo.aspx" runat="server">
+            <i class="icon-pencil"></i>Thêm mới Video-Clips</asp:HyperLink>
+            </li>
+            <li>
+                <asp:HyperLink ID="lnkListVideo" NavigateUrl="MgerVideo.aspx" runat="server">
+            <i class="icon-credit-card"></i>Danh sách Video-Clips</asp:HyperLink>
+            </li>
+        </ul>--%>
+
+
+            <asp:HyperLink ID="lnkMgerContact" class="nav-header" NavigateUrl="MgerContact.aspx?Status=0"
+                runat="server">
+                <i class="icon-comment"></i>Thư liên hệ <span class="label label-info">
+                    <asp:Label ID="lblh" runat="server" Text="0" /></span>
+            </asp:HyperLink>
+
+            <asp:HyperLink ID="lnkMgerSupport" class="nav-header" NavigateUrl="MgerSupport.aspx"
+                runat="server">
+            <i class="icon-phone"></i>Hổ trợ khách hàng 
+            </asp:HyperLink>
+
+            <asp:HyperLink ID="lnkMgerUs" NavigateUrl="#accounts-menu" class="nav-header collapsed"
+                data-toggle="collapse" runat="server">
+            <i class="icon-briefcase">
+        </i>Quản lý người dùng<i class="icon-chevron-up"> </i></asp:HyperLink>
+            <ul id="accounts-menu" class="nav nav-list collapse">
+                <li>
+                    <asp:HyperLink ID="lnkMgerUser" NavigateUrl="MgerUser.aspx" runat="server">
+            <i class="icon-user"></i>Quản lý Người dùng</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="lnkMgerGroupUser" NavigateUrl="MgerGroupUser.aspx" runat="server">
+            <i class="icon-group"></i>Quản lý Nhóm người dùng</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="lnkMgerLogin" NavigateUrl="MgerLogin.aspx" runat="server">
+            <i class="icon-magic"></i>Quản lý đăng nhập</asp:HyperLink>
+                </li>
+                <li>
+                    <asp:HyperLink ID="lnkMgerJoinGroupUser" NavigateUrl="MgerJoinGroupUser.aspx" runat="server">
+            <i class="icon-magnet"></i>Phân nhóm người dùng</asp:HyperLink>
+                </li>
+            </ul>
+            <asp:HyperLink ID="lnWebsite" class="nav-header" NavigateUrl="/vn/home-1.html" Target="_blank" runat="server">
+                  <i class="icon-globe"></i>Đến Website
+            </asp:HyperLink>
+        </div>
+        <%-- div Content --%>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        </asp:ContentPlaceHolder>
+    </form>
+</body>
+</html>

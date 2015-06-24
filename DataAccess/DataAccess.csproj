@@ -1,0 +1,91 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1541E667-3625-4A18-893B-097F93D0764C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DataAccess</RootNamespace>
+    <AssemblyName>DataAccess</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Core">
+      <HintPath>..\..\RangSuNoOne\DataAccess\bin\Debug\Core.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classes\BaiViet.cs" />
+    <Compile Include="Classes\BasePage.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Classes\DangNhap.cs" />
+    <Compile Include="Classes\DatPhong.cs" />
+    <Compile Include="Classes\DatTiec.cs" />
+    <Compile Include="Classes\DatTour.cs" />
+    <Compile Include="Classes\HoiDap.cs" />
+    <Compile Include="Classes\HoTro.cs" />
+    <Compile Include="Classes\ImageAndClips.cs" />
+    <Compile Include="Classes\Img.cs" />
+    <Compile Include="Classes\LienHe.cs" />
+    <Compile Include="Classes\LoaiMenu.cs" />
+    <Compile Include="Classes\Module.cs" />
+    <Compile Include="Classes\MonAn.cs" />
+    <Compile Include="Classes\NguoiDung.cs" />
+    <Compile Include="Classes\NhomNguoiDung.cs" />
+    <Compile Include="Classes\PhanNhom.cs" />
+    <Compile Include="Classes\Phong.cs" />
+    <Compile Include="Classes\SlideShow.cs" />
+    <Compile Include="Classes\TheLoai.cs" />
+    <Compile Include="Classes\ThongKeTruyCap.cs" />
+    <Compile Include="Classes\ThongTinNguoiDung.cs" />
+    <Compile Include="Classes\Tour.cs" />
+    <Compile Include="Connect\ConnectData.cs" />
+    <Compile Include="Connect\GlobalConfiguration.cs" />
+    <Compile Include="Connect\Link.cs" />
+    <Compile Include="Connect\UpdataPageView.cs" />
+    <Compile Include="Help\ConvertType.cs" />
+    <Compile Include="Help\Helper.cs" />
+    <Compile Include="Help\LangMap.cs" />
+    <Compile Include="Help\LangResource.cs" />
+    <Compile Include="Help\StringUltility.cs" />
+    <Compile Include="Pager\PagerPadding.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

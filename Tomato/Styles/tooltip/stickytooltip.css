@@ -1,0 +1,98 @@
+﻿/*---------------------------------------------------------------------------*/
+/*------------------------------------------------ san pham noi bat trang con*/
+/*---------------------------------------------------------------------------*/
+.stickytooltip
+{
+    text-align:justify;
+    display: none;
+    position: absolute;
+    z-index: 3000;
+    width: 380px;
+    height: 145px;
+    padding:5px;
+    background-color:#fff; /*#d9effb;*/
+    border: 2px solid #fff;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+}
+.stickytooltip .toolimg
+{
+    width: 100px;
+    height: 90px;
+    float:left;
+}
+.stickytooltip .toolimg img
+{
+    width: 100px;
+    height: 90px;
+    padding:1px;
+    border: 1px solid #c8d6de;
+}
+.stickytooltip .toolcontent
+{
+    width: 260px;
+    height: 105px;
+    margin-left:10px;
+    float:left;
+}
+.stickytooltip h4
+{
+    font-family:Times New Roman;
+    font-size:15px;
+    color:#0188c7;
+    line-height:15px;
+    margin-bottom:5px;
+}
+.thumbnail-item
+{
+    display: block;
+    width: 252px;
+    height: 64px;
+    margin-left: 10px;
+    margin-top: 10px;
+    margin-bottom:10px;
+    background-color: #f2f7f8;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+}
+.thumbnail-item:hover
+{
+    background-color: #d9effb;
+}
+.thumbnail-item .Frames
+{
+    width: 90px;
+    float: left;
+}
+.thumbnail-item .Description
+{
+    text-align: left;
+    font-family: Arial;
+    font-size: 14px;
+    line-height: 16px;
+    width: 150px;
+    margin-left: 10px;
+    float: left;
+}
+.thumbnail-item .Frames img
+{
+    width: 90px;
+    height: 60px;
+    margin-bottom: 5px;
+    border: 2px solid #b2b2b2;
+}
+
+.thumbnail-item .Description a
+{
+    color: #0072bb;
+    text-decoration: none;
+}
+.thumbnail-item .Description a:hover
+{
+    color: #006fa2;
+    text-decoration:underline;
+}

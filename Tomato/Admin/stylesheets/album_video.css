@@ -1,0 +1,351 @@
+/*---------------------------------------------------------------------------*/
+/*----------------------------------------------------------- css list photo */
+/*---------------------------------------------------------------------------*/
+.titlePhoto
+{
+    width: 800px;
+    height: 30px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+.linkEditAlbum
+{
+    text-decoration:none;
+    width:95px;
+    float:left;
+    margin-left:5px;
+    text-align:center;
+    color: #fff;
+    padding:5px 0px 5px 10px;
+    background: url( '../images/put.png' ) #0072bb no-repeat;   
+    border: 1px solid #0072bb;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+}
+.linkRemovealbum
+{
+    text-decoration:none;
+    width:95px;
+    float:left;
+    text-align:center;
+    margin-left:15px;
+    color: #fff;
+    padding:5px 10px 5px 30px;
+    background: url( '../images/remove2.png' ) #0072bb no-repeat;   
+    border: 1px solid #0072bb;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+}
+.linkEditAlbum:hover,.linkRemovealbum:hover,.linkEditVideo:hover,.linkRemovevideo:hover
+{
+    color: #fff;
+    background-color: #2fa6f2;
+    border: 1px solid #2fa6f2;
+}
+hr.hralbum
+{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #338caa;
+    width: 750px;
+}
+hr.hrvideo
+{
+    margin-left: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #338caa;
+    width: 750px;
+}
+.listalbum
+{
+    margin-left:10px;
+    width: 750px;
+}
+.itemalbum
+{
+    width: 242px;
+    height: 290px;
+    float: left;
+    margin: 0px 10px 30px 0px;
+    background-color: #e6eef4;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+}
+.itemalbum:hover
+{
+    background-color:#d9effb;
+}
+.titlealbum
+{
+    width: 242px;
+    height: 60px;
+    text-align: center;
+}
+.linkevent
+{
+    width: 290px;
+    height: 40px;
+    text-align: center;
+}
+.titlealbum h5
+{
+    position: relative;
+    font-size: 11pt;
+    font-weight: bold;
+    color: #0188c7;
+    z-index: 999;
+}
+.titlealbum a
+{
+    float: left;
+}
+.titlealbum a:hover
+{
+    text-decoration: underline;
+}
+.image_stack
+{
+    /* css style for photo stack */
+    width: 242px;
+    height: 180px;
+    position: relative;
+}
+.image_stack img
+{
+    /* css style for photo stack */
+    width: 170px;
+    height: 130px;
+    position: absolute;
+    border: 4px solid #FFF;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    z-index: 99; /* Firefox */
+    -moz-transition: all 0.2s ease; /* WebKit */
+    -webkit-transition: all 0.2s ease; /* Opera */
+    -o-transition: all 0.2s ease; /* Standard */
+    transition: all 0.2s ease;
+}
+.image_stack #photo1
+{
+    /* position of last photo in the stack */
+    top: 15px;
+    left: 48px;
+    -webkit-transform: rotate(8deg); /* safari and chrome */
+    -moz-transform: rotate(8deg); /*firefox browsers */
+    transform: rotate(8deg); /*other */
+    -ms-transform: rotate(8deg); /* Internet Explorer 9 */
+    -o-transform: rotate(8deg); /* Opera */
+}
+.image_stack #photo2
+{
+    /* position of middle photo in the stack */
+    top: 25px;
+    left: 30px;
+}
+.image_stack #photo3
+{
+    /* position of first photo at the top in the stack */
+    top: 35px;
+    left: 20px;
+    -webkit-transform: rotate(-8deg); /* safari and chrome */
+    -moz-transform: rotate(-8deg); /*firefox browsers */
+    transform: rotate(-8deg); /*other */
+    -ms-transform: rotate(-8deg); /* Internet Explorer 9 */
+    -o-transform: rotate(-8deg); /* Opera */
+}
+.image_stack .rotate1
+{
+    /* rotate last image 15 degrees to the right */
+    -webkit-transform: rotate(15deg); /* safari and chrome */
+    -moz-transform: rotate(15deg); /*firefox browsers */
+    transform: rotate(15deg); /*other */
+    -ms-transform: rotate(15deg); /* Internet Explorer 9 */
+    -o-transform: rotate(15deg); /* Opera */
+}
+.image_stack .rotate2
+{
+    /* css not used*/
+    -webkit-transform: rotate(0deg); /* safari and chrome */
+    -moz-transform: rotate(0deg); /*firefox browsers */
+    transform: rotate(0deg); /*other */
+    -ms-transform: rotate(0deg); /* Internet Explorer 9 */
+    -o-transform: rotate(0deg); /* Opera */
+}
+.image_stack .rotate3
+{
+    /*rotate first image 15 degrees to the left*/
+    -webkit-transform: rotate(-15deg); /* safari and chrome */
+    -moz-transform: rotate(-15deg); /*firefox browsers */
+    transform: rotate(-15deg); /*other */
+    -ms-transform: rotate(-15deg); /* Internet Explorer 9 */
+    -o-transform: rotate(-15deg); /* Opera */
+    cursor: pointer;
+}
+/*---------------------------------------------------------------------------*/
+/*--------------------------------------------------------- css edit photo */
+/*---------------------------------------------------------------------------*/
+.itemimg
+{
+    width: 210px;
+    height: 150px;
+    float: left;
+    margin: 0px 20px 20px 0px;
+}
+.linkRemoveimg
+{
+    position: relative;
+    top: -153px;
+    left: 185px;
+    height: 33px;
+    padding: 12px;
+    background: url( '../images/remove.png' ) #bebdbd no-repeat;
+    border: 0px;
+    z-index: 999;
+}
+.itemimg img
+{
+    /* css style for photo stack */
+    width: 210px;
+    height: 150px;
+    border: 3px solid #bebdbd;
+}
+.itemimg img:hover
+{
+    border: 3px solid #e0e0e0;
+}
+/*---------------------------------------------------------------------------*/
+/*--------------------------------------------------------- css video */
+/*---------------------------------------------------------------------------*/
+
+.itemvideo
+{
+    width: 730px;
+    height: 225px;
+    padding: 10px;
+    margin: 0px 20px 30px 10px;
+    background-color: #e6eef4;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+}
+.itemvideo:hover
+{
+    background-color:#d9effb;
+}
+.linkEditVideo
+{
+    text-decoration:none;
+    width:120px;
+    float:left;
+    text-align:center;
+    color: #fff;
+    padding:5px 15px 5px 30px;
+    background: url( '../images/put.png' ) #0072bb no-repeat;   
+    border: 1px solid #0072bb;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+}
+.linkRemovevideo
+{
+    text-decoration:none;
+    width:95px;
+    float:left;
+    text-align:center;
+    margin-left:15px;
+    color: #fff;
+    padding:5px 20px 5px 35px;
+    background: url( '../images/remove2.png' ) #0072bb no-repeat;   
+    border: 1px solid #0072bb;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+}
+.left
+{
+    width: 250px;
+    height: 250px;
+    float: left;
+}
+
+.left .videos_url
+{
+    border: 5px solid #7a7a7a;
+    padding: 2px;
+    width: 230px;
+    height: 210px;
+}
+.left .videos_url img
+{
+    width: 236px;
+    height: 210px;
+}
+.playvideo
+{
+    position: relative;
+    top: -110px;
+    left: 85px;
+    padding: 20px 30px 10px 20px;
+    background: url( '../images/play.png' ) no-repeat;
+    border: 0px;
+    z-index: 999;
+    opacity: 0.7;
+}
+
+
+.right
+{
+    width: 450px;
+    height: 220px;
+    margin-left: 15px;
+    margin-top: 5px;
+    float: left;
+}
+.right .textvideo
+{
+    width: 450px;
+    height: 185px;
+}
+.right h5
+{
+    position: relative;
+    font-size: 11pt;
+    font-weight: bold;
+    color: #0188c7;
+    z-index: 999;
+}
+.right h5 strong
+{
+    color: #000;
+}
+.right .videos_event
+{
+    width: 450px;
+    height: 35px;
+}
+.right p
+{
+    line-height: 15px;
+}
+.right .txtmin
+{
+    width: 450px;
+    height: 25px;
+    border: 1px solid #338caa;
+}
+.right .txtmax
+{
+    width: 450px;
+    height: 60px;
+    border: 1px solid #338caa;
+}

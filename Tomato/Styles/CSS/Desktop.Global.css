@@ -1,0 +1,1208 @@
+﻿*
+{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    border: none;
+    outline: none;
+}
+
+@font-face
+{
+    font-family: UVN_Van;
+    src: url("/Styles/CSS/Font/UVN_Van/UVNVAN_R.TTF");
+}
+
+@font-face
+{
+    font-family: UTM_Facebook;
+    src: url("/Styles/CSS/Font/UTM_Facebook/UTM_Facebook.TTF");
+}
+
+h1, h2, h3, h4, h5, h6
+{
+    float: left;
+    font-weight: normal;
+}
+
+.img, .link, .full
+{
+    height: 100%;
+}
+
+
+body, .line-fix-parent-width, .container, .header, .img, .link, .full
+{
+    float: left;
+    width: 100%;
+}
+
+body
+{
+    height: 200%;
+    background-color: #f2f8f2;
+}
+
+.container
+{
+}
+
+.header
+{
+    height: 160px;
+    background-image: url("/Design/head-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+
+.header-wrap
+{
+    float: left;
+    width: 74.128%;
+    height: 100%;
+    margin-left: 12.935%;
+    position: relative;
+}
+
+
+.logo
+{
+    float: left;
+    width: 30%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.lang-bar
+{
+    float: left;
+    width: 28.8%;
+    height: 32px;
+    background-color: rgba(255,255,255,0.5);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+}
+
+
+.lang-item
+{
+    float: left;
+    width: 31%;
+    height: 21px;
+    margin-top: 1.8%;
+    margin-right: 1%;
+}
+
+    .lang-item:first-child
+    {
+        margin-left: 3.5%;
+    }
+
+.lang-icon
+{
+    float: left;
+    width: 36%;
+    margin-right: 1%;
+}
+
+.lang-name
+{
+    float: left;
+    width: 62%;
+    font-family: 'UVN_Van';
+    font-size: 13px;
+    color: #545454;
+}
+
+    .lang-name span
+    {
+        float: left;
+        width: 100%;
+        margin-top: 3px;
+    }
+
+.hotline
+{
+    float: left;
+    position: absolute;
+    top: 50px;
+    right: 0;
+}
+
+    .hotline span
+    {
+        font-family: UTM_Facebook;
+        font-size: 30px;
+        font-weight: bolder;
+        color: #4eae00;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: #FFF;
+    }
+
+.hnavigation
+{
+    float: left;
+    width: 64.295%;
+    height: 52px;
+    border-top-left-radius: 9px;
+    border-top: 1px solid #FFF;
+    border-left: 1px solid #FFF;
+    background-color: #f54a15;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+
+.hnav ul
+{
+    float: left;
+    width: 100%;
+}
+
+
+    .hnav ul li
+    {
+        float: left;
+        font-family: UTM_Facebook;
+        text-align: center;
+    }
+
+        .hnav ul li a
+        {
+            float: left;
+            padding: 19px 15px;
+            font-size: 14px;
+            color: #FFF;
+        }
+
+.hnav > ul > li:first-child
+{
+    border-top-left-radius: 9px;
+}
+
+.hnav > ul > li > a
+{
+    padding: 18.8px 21.5px;
+}
+
+
+.hnav li.active
+{
+    background-color: #3fc329;
+}
+
+    .hnav li.active > a
+    {
+        color: #FFF;
+    }
+
+.hnav > ul li:hover
+{
+    background-color: #3fc329;
+}
+
+    .hnav > ul li:hover a
+    {
+        color: #FFF;
+    }
+
+.hnav > ul > li:hover
+{
+    color: #FFF;
+}
+
+.hnav > ul > li.has-sub > ul
+{
+    top: 100%;
+    left: 0;
+    z-index: 10;
+}
+
+.hnav > ul > li.has-sub
+{
+}
+
+.has-sub span.arrow
+{
+    text-align: center;
+    margin-left: 3px;
+}
+
+.hnav > ul > li.has-sub > span.arrow
+{
+    float: left;
+    width: 100%;
+    text-align: center;
+    margin-top: -6px;
+    margin-left: 0px;
+}
+
+
+
+.has-sub
+{
+    position: relative;
+}
+
+    .has-sub > ul
+    {
+        position: absolute;
+        width: 220px;
+        display: none;
+        z-index: 10;
+    }
+
+    .has-sub ul li
+    {
+        background-color: rgba(63, 195, 41, 1);
+        width: 100%;
+        border-top: 1px solid #FFF;
+        padding-left: 0;
+        padding-right: 0;
+        text-indent: 15px;
+        text-align: left;
+    }
+
+
+        .has-sub ul li:first-child
+        {
+        }
+
+        .has-sub ul li:last-child
+        {
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+    .has-sub:hover > ul
+    {
+        display: block;
+    }
+
+    .has-sub > ul li:hover
+    {
+        background-color: rgba(63, 195, 41, 0.8);
+    }
+
+
+.slide-and-booking
+{
+    float: left;
+    width: 100%;
+    height: 390px;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.hslideshow
+{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.booking
+{
+    float: left;
+    /*width: 306px;*/
+    width: 22.683%%;
+    height: 100%;
+    background-image: url("/Design/book-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 0;
+    margin-left: 12.935%;
+}
+
+.booking-wrap
+{
+    float: left;
+    width: 80.392%;
+    height: 85.897%;
+    margin-left: 9.804%;
+    margin-top: 7.051%;
+}
+
+.booking-header
+{
+    float: left;
+    width: 100%;
+    padding: 15px 0px;
+    margin-top: 15px;
+    margin-bottom: 17px;
+    border-top: 1px dotted #696a61;
+    border-bottom: 1px dotted #696a61;
+}
+
+    .booking-header h1
+    {
+        float: left;
+        width: 100%;
+        font-family: UTM_Facebook;
+        font-size: 20px;
+        color: #4b4b4b;
+        text-align: center;
+    }
+
+.booking-info
+{
+}
+
+.booking-mess
+{
+    float: left;
+    width: 100%;
+    text-align: center;
+    font-family: UTM_Facebook;
+    color: orange;
+    position: absolute;
+    top: 9px;
+}
+
+.info-input
+{
+    float: left;
+    width: 100%;
+    height: 27px;
+    margin-top: 10px;
+    outline: 1px solid #FFF;
+    background-color: rgba(255,255,255,0.4);
+}
+
+.input
+{
+    float: left;
+    width: 100%;
+    height: 100%;
+    text-indent: 10px;
+    font-family: Arial;
+    font-size: 12px;
+    font-style: italic;
+    color: #4b4b4b;
+    background-color: transparent;
+}
+
+.info-input-short
+{
+    width: 66.393%;
+}
+
+.btn-booking
+{
+    float: left;
+    width: 29%;
+    height: 90px;
+    position: absolute;
+    bottom: 24px;
+    right: -45px;
+    border-radius: 50%;
+    background-color: #f54a15;
+    transition: all .3s ease-in-out;
+}
+
+    .btn-booking:hover
+    {
+        background-color: #3fc329;
+    }
+
+.btn-booking-wrap
+{
+    float: left;
+    width: 100%;
+    height: 50%;
+    margin-top: 25%;
+    text-align: center;
+}
+
+    .btn-booking-wrap p
+    {
+        float: left;
+        width: 100%;
+        margin-bottom: 3px;
+        font-family: UTM_Facebook;
+        /*font-size: 18px;*/
+        font-size: 1.5vw;
+        color: #FFF;
+    }
+
+
+.cuisine
+{
+    float: left;
+    width: 100%;
+    padding: 20px 0;
+    border-bottom: 1px solid #a5d79c;
+    background-color: #c5eebe;
+}
+
+.cuisine-wrap
+{
+    float: left;
+    width: 74.128%;
+    margin-left: 12.935%;
+}
+
+.cuisine-item
+{
+    float: left;
+    width: 19.65%;
+    margin-right: 0.4%;
+}
+
+    .cuisine-item:last-child
+    {
+        margin-right: 0;
+    }
+
+.cuisine-figure
+{
+    float: left;
+    width: 100%;
+    height: 149px;
+}
+
+.cuisine-title
+{
+    float: left;
+    width: 100%;
+    background-color: #3fc329;
+    margin-top: 1px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+    .cuisine-title:hover
+    {
+    }
+
+    .cuisine-title h1
+    {
+        float: left;
+        width: 100%;
+        margin-top: 11px;
+        margin-bottom: 11px;
+        font-family: UTM_Facebook;
+        /*font-size: 1.3vw;*/
+        font-size: 17px;
+        color: #FFF;
+        text-align: center;
+    }
+
+.body
+{
+    float: left;
+    width: 100%;
+}
+
+.body-wrap
+{
+    float: left;
+    width: 74.128%;
+    margin-left: 12.935%;
+    padding-top: 23px;
+    padding-bottom: 25px;
+}
+
+.body-left
+{
+    float: left;
+    width: 30.6%;
+    margin-right: 2.7%;
+}
+
+.vnavigation
+{
+    float: left;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.block-header
+{
+    float: left;
+    width: 100%;
+    background-color: #f54a15;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom: 1px solid #c83507;
+}
+
+    .block-header h1
+    {
+        float: left;
+        width: 100%;
+        margin: 10px 0;
+        font-family: UTM_Facebook;
+        /*font-size: 1.3vw;*/
+        font-size: 17px;
+        color: #FFF;
+        text-align: center;
+    }
+
+.block-content
+{
+    float: left;
+    width: 100%;
+    background-color: #3fc329;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.block-content-wrap
+{
+    float: left;
+    width: 86.274%;
+    margin-left: 6.862%;
+    margin-top: 7px;
+}
+
+    .block-content-wrap > ul
+    {
+        float: left;
+        width: 100%;
+        height: auto;
+    }
+
+        .block-content-wrap > ul > li
+        {
+            float: left;
+            width: 100%;
+            padding-bottom: 11px;
+            padding-top: 11px;
+            border-bottom: 1px solid #7aed67;
+        }
+
+            .block-content-wrap > ul > li:hover
+            {
+                background-color: rgba(255,255,255,0.1);
+            }
+
+            .block-content-wrap > ul > li:last-child
+            {
+                border-bottom: none;
+                margin-bottom: 7px;
+            }
+
+            .block-content-wrap > ul > li > a > span
+            {
+                float: left;
+                width: 100%;
+                font-family: UTM_Facebook;
+                /*font-size: 1.3vw;*/
+                font-size: 17px;
+                color: #FFF;
+                text-align: center;
+            }
+
+.galery-wrap
+{
+    float: left;
+    width: 100%;
+    /*height: 360px;*/
+    /*margin-top: 20px;*/
+}
+
+.galery-block
+{
+    float: left;
+    width: 87.204%;
+    height: 310px;
+    padding-top: 30px;
+    margin-bottom: 18px;
+    padding: 6.3977%;
+    background-color: #e4ebe3;
+    padding-bottom: 0px;
+}
+
+
+.galery-title-bar
+{
+    float: left;
+    width: 100%;
+}
+
+.gallery-title
+{
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #3fc329;
+}
+
+    .gallery-title h1
+    {
+        float: left;
+        width: auto;
+        margin-left: 3px;
+        margin-top: 3px;
+        font-family: UTM_Facebook;
+        font-size: 25px;
+        color: #f54a15;
+    }
+
+.galery-title-bar-icon
+{
+    float: left;
+    width: 27px;
+    height: 29px;
+    margin-bottom: 5px;
+}
+
+.galery-content
+{
+    float: left;
+    width: 100%;
+    height: 89%;
+    overflow: hidden;
+}
+
+    .galery-content ul
+    {
+        float: left;
+        width: 100%;
+        height: inherit;
+    }
+
+        .galery-content ul li
+        {
+            float: left;
+            width: 100%;
+        }
+
+.gallery-item
+{
+    float: left;
+    width: 41.8%;
+    height: 78px;
+    margin-left: 4%;
+    padding: 0.5%;
+    margin-top: 4%;
+    border: 1px solid #e1dbcb;
+    background-color: #FFF;
+}
+
+.body-right
+{
+    float: left;
+    width: 66.7%;
+}
+
+.body-right-content
+{
+    float: left;
+    width: 102.5%;
+    margin-top: 10px;
+    font-family: Tahoma;
+    font-size: 15px;
+    color: #4b4b4b;
+    text-align: justify;
+    line-height: 20px;
+}
+
+.block30
+{
+    float: left;
+    width: 30.547%;
+    height: 324px;
+    overflow: hidden;
+    margin-right: 2.785%;
+    margin-bottom: 15px;
+}
+
+.block30-figure
+{
+    float: left;
+    width: 100%;
+    height: 147px;
+}
+
+.block30-title
+{
+    float: left;
+    width: 100%;
+}
+
+    .block30-title h1
+    {
+        float: left;
+        width: 100%;
+        height: 34px;
+        overflow: hidden;
+        font-family: Arial;
+        font-size: 13px;
+        font-weight: bold;
+        color: #3fc329;
+        text-align: justify;
+        margin-top: 20px;
+        margin-bottom: 9px;
+        line-height: 17px;
+    }
+
+.block30-content
+{
+    float: left;
+    width: 100%;
+    height: 85px;
+    overflow: hidden;
+    font-family: Arial;
+    font-size: 13px;
+    color: #4c504c;
+    text-align: justify;
+    line-height: 17px;
+}
+
+.read-more
+{
+    float: left;
+    width: 100%;
+    margin-top: 8px;
+}
+
+    .read-more .link
+    {
+        float: left;
+        width: 100%;
+        font-family: Arial;
+        font-size: 12px;
+        font-style: italic;
+        color: #f54a15;
+    }
+
+.footer
+{
+    float: left;
+    width: 100%;
+    height: 108px;
+    overflow: hidden;
+    background-color: #f54a15;
+    font-family: Arial;
+    font-size: 13px;
+    color: #FFF;
+    line-height: 17px;
+}
+
+.footer-wrap
+{
+    float: left;
+    width: 74.128%;
+    height: 100%;
+    margin-left: 12.935%;
+}
+
+.footer-right-cover
+{
+    float: left;
+    width: 12.935%;
+    height: 100%;
+    background-color: #3fc329;
+}
+
+.res-info
+{
+    float: left;
+    width: 57%;
+    height: 100%;
+}
+
+
+    .res-info > h1
+    {
+        float: left;
+        width: 100%;
+        margin-top: 18px;
+        margin-bottom: 9px;
+        font-family: UTM_Facebook;
+        font-size: 17px;
+    }
+
+    .res-info > p
+    {
+        float: left;
+        width: 100%;
+    }
+
+.social-network
+{
+    float: left;
+    width: 15.3%;
+    height: 100%;
+    background-color: #f9fbf9;
+}
+
+.social-item
+{
+    float: left;
+    width: 32.7%;
+    height: 100%;
+    background-color: #f54a15;
+    outline: 3px solid #FFF;
+    /*margin-right: 2.5%;*/
+}
+
+    .social-item:hover
+    {
+        background-color: #f3240e;
+    }
+
+    .social-item:first-child
+    {
+        /*margin-left: 2.5%;*/
+    }
+
+.social-item-icon
+{
+    float: left;
+    width: 72.34%;
+    height: 31.481%;
+    margin-top: 36px;
+    margin-left: 13.83%;
+}
+
+.design-by
+{
+    float: right;
+    width: 27.7%;
+    height: 100%;
+    text-align: right;
+    background-color: #3fc329;
+}
+
+    .design-by p
+    {
+        float: left;
+        width: 100%;
+        margin-top: 18%;
+        text-align: right;
+    }
+
+        .design-by p a
+        {
+            float: right;
+            margin-left: 3px;
+            width: auto;
+            color: #FFF;
+        }
+
+.menu-wrap
+{
+    float: left;
+    width: 100%;
+    height: 558px;
+    overflow: hidden;
+}
+
+.menu-item
+{
+    float: left;
+    width: 31.617%;
+    height: 152px;
+    margin-right: 1.323%;
+    margin-bottom: 20px;
+    /*position: relative;*/
+}
+
+    .menu-item > a
+    {
+        position: relative;
+    }
+
+.menu-figure
+{
+    float: left;
+    width: 100%;
+    height: 100%;
+}
+
+.menu-price
+{
+    float: left;
+    width: 100%;
+    height: 59px;
+    background-color: rgba(90, 103, 88, 0.3);
+    border-bottom: 1px solid #98694f;
+    position: absolute;
+    bottom: 0;
+    visibility: hidden;
+    transition: all .2s ease-in-out;
+}
+
+    .menu-price span
+    {
+        float: left;
+        width: 100%;
+        margin-top: 27px;
+        font-family: Arial;
+        font-size: 13px;
+        font-weight: bold;
+        color: #FFF;
+        text-align: center;
+    }
+
+.menu-item:hover .menu-price
+{
+    background-color: rgba(90, 103, 88, 0.6);
+    bottom: 29px;
+    visibility: visible;
+}
+
+.menu-title
+{
+    float: left;
+    width: 100%;
+    height: 29px;
+    background-color: rgba(245, 74, 21, 0.8);
+    position: absolute;
+    bottom: 0px;
+}
+
+    .menu-title h1
+    {
+        float: left;
+        width: 100%;
+        margin-top: 7px;
+        font-family: Arial;
+        font-size: 15px;
+        text-align: center;
+        color: #FFF;
+    }
+
+.body-right-content img
+{
+    max-width: 100%;
+}
+
+.pager
+{
+    float: left;
+    width: 98%;
+    text-align: right;
+}
+
+    .pager > .control-pager a, .pager > .control-pager span
+    {
+        float: left;
+        width: 30px;
+        height: 25px;
+        margin-left: 5px;
+        background-color: #e5ece5;
+        border-radius: 3px;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 15px;
+        color: #3fc329;
+        text-align: center;
+        padding-top: 5px;
+        -webkit-box-shadow: 1px 1px 0px 0px rgba(174,175,174,1);
+        -moz-box-shadow: 1px 1px 0px 0px rgba(174,175,174,1);
+        box-shadow: 1px 1px 0px 0px rgba(174,175,174,1);
+    }
+
+    .pager > .control-pager span
+    {
+        font-weight: bold;
+        color: #f54a15;
+    }
+
+.page-item
+{
+}
+
+
+/*Detail Product CSS*/
+.product-detail
+{
+    float: left;
+    width: 100%;
+}
+
+
+.product-detail-header
+{
+    float: left;
+    width: 100%;
+    border-bottom: 1px solid #C0C0C0;
+    padding-bottom: 10px;
+}
+
+    .product-detail-header h1
+    {
+        float: left;
+        width: 100%;
+        font-family: Tahoma,Arial,sans-serif;
+        color: #0066a8;
+        font-size: 27px;
+    }
+
+
+.product-detail-wrapper
+{
+    float: left;
+    /*width: 80%;*/
+    width: 100%;
+    margin-top: 10px;
+}
+
+.thumms
+{
+    float: left;
+    width: 92%;
+    margin-top: 10px;
+    /*border-right: 1px solid #c6cacc;*/
+}
+
+.thumb
+{
+    float: left;
+    width: 31%;
+    height: 72px;
+    margin-right: 2.3%;
+    margin-bottom: 9px;
+}
+
+    .thumb img
+    {
+        /*float: left;
+        width: 90%;
+        margin: 5%;*/
+    }
+
+    .thumb:first-child
+    {
+        margin-top: 0;
+    }
+
+.thumb-active
+{
+    outline: 1px solid #3fc329;
+}
+
+.figure
+{
+    float: left;
+    width: 54%;
+    min-height: 207px;
+}
+
+.figure-wrapper
+{
+    float: left;
+    width: 90%;
+    height: 252px;
+    /*margin-left: 5%;*/
+}
+
+    .figure-wrapper > a
+    {
+        width: 100% !important;
+        height: 100% !important;
+    }
+
+        .figure-wrapper > a > img
+        {
+            /*width: 100% !important;
+            height: 100% !important;
+            margin: 0 auto !important;*/
+            /*margin: 10% 10% 0 !important;*/
+            width: 100% !important;
+        }
+
+.product-infos
+{
+    float: left;
+    width: 46%;
+}
+
+.product-label, .product-info
+{
+    border-bottom: 1px dashed #c6cacc;
+    padding-bottom: 5px;
+    margin-top: 9px;
+    font-family: Tahoma,Arial,sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.product-label
+{
+    float: left;
+    width: 35%;
+    font-weight: bold;
+}
+
+.product-info
+{
+    float: left;
+    width: 60%;
+}
+
+    .product-info > .product-under
+    {
+        background: none;
+    }
+
+    .product-info .discount
+    {
+        width: 14%;
+    }
+
+.detail-info
+{
+    float: left;
+    width: 100%;
+    margin-top: 15px;
+}
+
+.detail-title
+{
+    float: left;
+    width: 100%;
+    /*border-top: 1px dotted #C0C0C0;*/
+    /*margin-top: 10px;*/
+}
+
+    .detail-title h1
+    {
+        float: left;
+        width: 100%;
+        border-bottom: 1px dotted #C0C0C0;
+        padding-bottom: 9px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        font-family: UTM_Facebook;
+        font-size: 17px;
+        color: #f54a15;
+    }
+
+.detail-info-wraper
+{
+    float: left;
+    width: 98%;
+    margin: 1%;
+    font-family: Tahoma,Arial,sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+
+.related-product
+{
+    float: left;
+    width: 100%;
+    margin-top: 10px;
+    padding-bottom: 9px;
+}
+
+.related-product-wraper
+{
+    float: left;
+    width: 104%;
+}

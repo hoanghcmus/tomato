@@ -1,0 +1,234 @@
+﻿/*---------------------------------------------------------------------------*/
+/*----------------------------------------------------------- css list photo */
+/*---------------------------------------------------------------------------*/
+.listalbum
+{
+    width: 100%;
+}
+
+.itemalbum
+{
+    width: 30.58%;
+    height: 194px;
+    float: left;
+    margin: 8px 0px 15px 1%;
+    padding: 5px;
+    background-color: rgba(255,255,255,0.4);
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+    box-shadow: 1px 1px 2px 0px rgba(0,0,0,0.3);
+}
+
+    .itemalbum:hover
+    {
+        background-color: rgba(255,255,255,1);
+    }
+
+.titlealbum
+{
+    background-color: rgba(241,171,3,0.5);
+    /*background-color: rgba(132,4,4,0.5);*/
+    height: 29px;
+    text-align: center;
+    font-family: UVN_Tin_Tuc_Nhe;
+    overflow: hidden;
+    padding-top: 4px;
+    margin-top: 1px;
+}
+
+    .titlealbum a
+    {
+        position: relative;
+        font-size: 23px;
+        color: #443d37;
+        text-decoration: none;
+        font-family: UVN_MAU_TIM_2;
+    }
+
+        .titlealbum a:hover
+        {
+            font-weight: bold;
+        }
+
+.image_stack
+{ /* css style for photo stack */
+    /*width: 248px;*/
+    width: 100%;
+    height: 160px;
+    position: relative;
+}
+
+    .image_stack img
+    { /* css style for photo stack */
+        /*width: 170px;
+        height: 100px;
+        position: absolute;
+        border: 2px solid #FFF;
+        box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        -moz-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        -webkit-box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+        z-index: 99;
+        /* Firefox */
+        /*-moz-transition: all 0.2s ease;*/
+        /* WebKit */
+        /*-webkit-transition: all 0.2s ease;*/
+        /* Opera */
+        /*-o-transition: all 0.2s ease;*/
+        /* Standard */
+        /*transition: all 0.2s ease;*/
+        width: 100%;
+        height: 100%;
+    }
+
+    .image_stack #photo1
+    { /* position of last photo in the stack */
+        top: 20px;
+        left: 45px;
+        /*-webkit-transform: rotate(8deg);*/ /* safari and chrome */
+        /*-moz-transform: rotate(8deg);*/ /*firefox browsers */
+        /*transform: rotate(8deg);*/ /*other */
+        /*-ms-transform: rotate(8deg);*/ /* Internet Explorer 9 */
+        /*-o-transform: rotate(8deg); /* Opera */ */;
+    }
+
+    .image_stack #photo2
+    { /* position of middle photo in the stack */
+        top: 30px;
+        left: 30px;
+    }
+
+    .image_stack #photo3
+    { /* position of first photo at the top in the stack */
+        top: 40px;
+        left: 20px;
+        -webkit-transform: rotate(-8deg); /* safari and chrome */
+        -moz-transform: rotate(-8deg); /*firefox browsers */
+        transform: rotate(-8deg); /*other */
+        -ms-transform: rotate(-8deg); /* Internet Explorer 9 */
+        -o-transform: rotate(-8deg); /* Opera */
+    }
+
+    .image_stack .rotate1
+    { /* rotate last image 15 degrees to the right */
+        -webkit-transform: rotate(15deg); /* safari and chrome */
+        -moz-transform: rotate(15deg); /*firefox browsers */
+        transform: rotate(15deg); /*other */
+        -ms-transform: rotate(15deg); /* Internet Explorer 9 */
+        -o-transform: rotate(15deg); /* Opera */
+    }
+
+    .image_stack .rotate2
+    { /* css not used*/
+        -webkit-transform: rotate(0deg); /* safari and chrome */
+        -moz-transform: rotate(0deg); /*firefox browsers */
+        transform: rotate(0deg); /*other */
+        -ms-transform: rotate(0deg); /* Internet Explorer 9 */
+        -o-transform: rotate(0deg); /* Opera */
+    }
+
+    .image_stack .rotate3
+    { /*rotate first image 15 degrees to the left*/
+        -webkit-transform: rotate(-15deg); /* safari and chrome */
+        -moz-transform: rotate(-15deg); /*firefox browsers */
+        transform: rotate(-15deg); /*other */
+        -ms-transform: rotate(-15deg); /* Internet Explorer 9 */
+        -o-transform: rotate(-15deg); /* Opera */
+        cursor: pointer;
+    }
+/*---------------------------------------------------------------------------*/
+/*--------------------------------------------------------- css Detail photo */
+/*---------------------------------------------------------------------------*/
+.gallery
+{
+    width: 100%;
+    text-align: left;
+}
+
+    .gallery .iconphoto
+    {
+        width: 40px;
+        height: 40px;
+        background: url( '/Design/iconphoto.png' ) no-repeat;
+        position: absolute;
+        top: -18px;
+        left: 165px;
+        z-index: 100;
+        display: none;
+    }
+
+    .gallery a
+    {
+        display: inline-block;
+        width: 22.35%;
+        height: 110px;
+        margin: 1%;
+        opacity: 1;
+        position: relative;
+        -khtml-user-drag: element;
+        /* CSS3 Prevent selections */
+        -moz-user-select: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        user-select: none;
+        /* CSS3 transition rules */
+        -webkit-transition: all 0.5s ease;
+        -moz-transition: all 0.5s ease;
+        -o-transition: all 0.5s ease;
+        transition: all 0.5s ease;
+    }
+
+        .gallery a img
+        {
+            border: 2px solid #FFF;
+            cursor: pointer;
+            display: block;
+            height: 100%;
+            left: 0px;
+            position: absolute;
+            top: 0px;
+            width: 99.8%;
+            z-index: 1;
+            /* CSS3 Box sizing property */
+            -moz-box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -o-box-sizing: border-box;
+            box-sizing: border-box;
+            /* CSS3 transition rules */
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            /* CSS3 Box Shadow */
+            -moz-box-shadow: 0px 0px 2px rgba(68,68,68,0.5);
+            -webkit-box-shadow: 0px 0px 2px rgba(68,68,68,0.5);
+            -o-box-shadow: 0px 0px 2px rgba(68,68,68,0.5);
+            box-shadow: 0px 0px 2px rgba(68,68,68,0.5);
+        }
+
+        /* Custom CSS3 rotate transformation */
+        .gallery a img
+        {
+            /*-moz-transform: rotate(-3deg);
+            -webkit-transform: rotate(-3deg);
+            transform: rotate(-3deg);*/
+        }
+
+        .gallery a:hover img
+        {
+            z-index: 5;
+            /*border: 3px solid #fff;*/
+            -moz-box-shadow: 0px 0px 2px rgba(68,68,68,1);
+            -webkit-box-shadow: 0px 0px 2px rgba(68,68,68,1);
+            -o-box-shadow: 0px 0px 2px rgba(68,68,68,1);
+            box-shadow: 0px 0px 2px rgba(68,68,68,1);
+            /* CSS3 transition rules */
+            -webkit-transition: all 0.5s ease;
+            -moz-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+            transition: all 0.5s ease;
+            /* CSS3 transform rules */
+            -moz-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            -o-transform: rotate(0deg);
+            transform: rotate(0deg);
+        }

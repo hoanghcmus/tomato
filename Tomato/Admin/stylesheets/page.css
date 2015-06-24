@@ -1,0 +1,809 @@
+﻿/*-----------------------------------------------------------------------------------*/
+/*------------------------------------------------------------------------> menu tat */
+/*-----------------------------------------------------------------------------------*/
+.menushort ul {list-style:none;margin-left:0px;padding-bottom:20px;}
+.menushort li {float:left; text-align:center; margin:4px}
+.menushort li a img {width:70px; height:70px;}
+.menushort li a {text-decoration:none; display:block;margin-right:10px; width:120px; height:100px; background:#efefef; border:solid 1px #ccc; -moz-border-radius:6px; -webkit-border-radius:6px; border-radius:6px}
+.menushort li a:hover {background:#fbf0b0}
+/*-----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------------> Page */
+/*-----------------------------------------------------------------------------------*/
+.height20
+{
+    height:20px;
+}
+a.linkAdd
+{
+    text-decoration:none;
+    width:95px;
+    float:left;
+    text-align:center;
+    color: #fff;
+    padding:5px 10px 5px 25px;
+    background: url( '../images/add.png' ) #0072bb no-repeat;   
+    border: 1px solid #0072bb;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+}
+.linkAddimg
+{
+    text-decoration:none;
+    float:left;
+    text-align:center;
+    color: #fff;
+    padding:5px 20px 5px 35px;
+    background: url( '../images/addimg.png' ) #0072bb no-repeat;   
+    border: 1px solid #0072bb;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+}
+.linkEdit
+{
+    text-decoration:none;
+    width:95px;
+    float:left;
+    margin-left:20px;
+    text-align:center;
+    color: #fff;
+    padding:5px 10px 5px 15px;
+    background: url( '../images/put.png' ) #0072bb no-repeat;   
+    border: 1px solid #0072bb;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+}
+.linkEditleft0
+{
+    text-decoration:none;
+    width:95px;
+    float:left;
+    text-align:center;
+    color: #fff;
+    padding:6px 10px 6px 15px;
+    background: url( '../images/put.png' ) #0072bb no-repeat;   
+    border: 1px solid #0072bb;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+}
+
+.linkRemovemin
+{
+    text-decoration:none;
+    width:95px;
+    float:left;
+    margin-left:5px;
+    text-align:center;
+    color: #fff;
+    padding:5px 10px 5px 30px;
+    background: url( '../images/remove2.png' ) #0072bb no-repeat;   
+    border: 1px solid #0072bb;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+}
+.linkEditmin
+{
+    text-decoration:none;
+    width:95px;
+    float:left;
+    margin-left:5px;
+    text-align:center;
+    color: #fff;
+    padding:5px 5px 5px 25px;
+    background: url( '../images/put.png' ) #0072bb no-repeat;   
+    border: 1px solid #0072bb;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+}
+.linkEdit:hover,.linkRemovemin:hover,.linkEditmin:hover, .linkEditleft0:hover ,.linkEditVideo:hover, .linkRemovealbum:hover, a.linkAdd:hover, .linkAddimg:hover,.linkRemovevideo:hover
+{
+    color: #fff;
+    background-color: #2fa6f2;
+    border: 1px solid #2fa6f2;
+}
+.sidebar-nav
+{
+    margin-top: 5px;
+}
+#line-chart
+{
+    height: 300px;
+    width: 800px;
+    margin: 0px auto;
+    margin-top: 1em;
+}
+.brand
+{
+    font-family: georgia, serif;
+}
+.brand .first
+{
+    color: #ccc;
+    font-style: italic;
+}
+.brand .second
+{
+    color: #fff;
+    font-weight: bold;
+}
+.block .toolbar
+{
+    padding: 10px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------> div content_right */
+/*-----------------------------------------------------------------------------------*/
+.content_right .titles
+{
+    margin-top: 15px;
+    float: left;
+    width: 180px;
+}
+.content_right .drl
+{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 220px;
+    height: 30px;
+    border: 1px solid #338caa;
+    margin: 0px;
+}
+.content_right .drl2
+{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 200px;
+    height: 30px;
+    border: 1px solid #338caa;
+}
+.content_right .drl160
+{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 160px;
+    height: 30px;
+    border: 1px solid #338caa;
+}
+.content_right .drlleft0, .list .drlleft0
+{
+    margin-left: 0px;
+    margin-top: 5px;
+    width: 200px;
+    height: 30px;
+    border: 1px solid #338caa;
+}
+.content_right .drlDate, .list .drlDate
+{
+    width: 110px;
+    height: 30px;
+    border: 1px solid #338caa;
+}
+.content_right .txtsmall
+{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #338caa;
+}
+.content_right .txt150
+{
+    width: 150px;
+    height: 30px;
+    border: 1px solid #338caa;
+}
+.content_right .txt100
+{
+    width: 150px;
+    height: 30px;
+    border: 1px solid #338caa;
+}
+.content_right .txt70
+{
+    width: 70px;
+    height: 30px;
+    border: 1px solid #338caa;
+}
+.content_right .txtmax
+{
+    width: 350px;
+    height: 30px;
+    border: 1px solid #338caa;
+}
+.content_right .txtnumber
+{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #338caa;
+}
+.content_right .txtnumbermin
+{
+    width: 50px;
+    height: 30px;
+    border: 1px solid #338caa;
+}
+.content_right .txtContentMin
+{
+    width: 400px;
+    height: 50px;
+    border: 1px solid #338caa;
+}
+.content_right .txtsreach
+{
+    margin-left: 5px;
+    width: 160px;
+    height: 23px;
+    border: 1px solid #338caa;
+    margin: 0px;
+}
+.content_right hr, .container-fluid hr
+{
+    margin: 5px 0px;
+    border: 1px solid #338caa;
+}
+.content_right .btnsreach
+{
+    margin-top: 5px;
+    width: 70px;
+    height: 30px;
+    color: #fff;
+    font-weight: bold;
+    border: 1px solid #338caa;
+    background: url( '../images/listsearch.png' ) #338caa no-repeat;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.content_right .multidelete, .execuChek, .btnedit, .linknewemail
+{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 160px;
+    height: 30px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #338caa;
+    border: 1px solid #338caa;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.linknewemail
+{
+    padding:6px 5px 10px 5px;
+    margin-left: 5px;
+    width: 160px;
+    height: 30px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #338caa;
+    border: 1px solid #338caa;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.btnnew
+{
+    padding:5px 10px 5px 10px;
+    color: #fff;
+    background-color: #338caa;
+    border: 1px solid #338caa;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.content_right .btnsmall
+{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 90px;
+    height: 30px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #338caa;
+    border: 1px solid #338caa;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.content_right .btnmin
+{
+    margin-left: 5px;
+    margin-top: 5px;
+    width: 120px;
+    height: 30px;
+    color: #fff;
+    font-weight: bold;
+    background-color: #338caa;
+    border: 1px solid #338caa;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+.content_right .lnkrep
+{
+    background-color: #338caa;
+    line-height: 30px;
+    padding: 8px 10px;
+    color: White;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+}
+.moreTheLoai,.moreHoTro, .morefbnd,.moreAdminletter, .morefbpnnd, .morefbUpdata
+{
+    margin-left: 5px;
+    background-color: #338caa;
+    line-height: 30px;
+    padding: 8px;
+    color: White;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+}
+.moreTheLoai:hover,.moreHoTro:hover,.morefbnd:hover, .moreAdminletter:hover, .morefbpnnd:hover ,.morefbUpdata:hover
+, .lnkrep:hover,.btnsreach:hover,.btnnew:hover,.linknewemail:hover, .btnmin:hover, .btnsmall:hover,.multidelete:hover, .execuChek:hover, .btnedit:hover
+{
+    color: #fff;
+    background-color: #2fa6f2;
+    border: 1px solid #2fa6f2;
+}
+/*-------------------------------------------------------------------------------------*/
+/*---------------------------------------------------------------------------> Menu Tat*/
+/*-------------------------------------------------------------------------------------*/
+ul.photos
+{
+    padding: 0px;
+    margin-top: 0px;
+    margin-left: 0px;
+    list-style: none;
+}
+ul.photos li
+{
+    width: 120px;
+    float: left;
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+    border: 1px solid #a4a4a4;
+    display: inline;
+}
+ul.photos li a.image
+{
+    border: 0px;
+    width: 120px;
+    height: 104px;
+    cursor: pointer;
+}
+ul.photos li span
+{
+    width: 120px;
+    height: 104px;
+    overflow: hidden;
+    display: block;
+}
+
+ul.photos li h4
+{
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 0;
+    padding: 4px;
+    background: #ececec;
+}
+ul.photos li h4:hover
+{
+    background: #93cee8;
+}
+ul.photos li a
+{
+    text-decoration: none;
+    color: #3a3a3a;
+    display: block;
+}
+ul.photos li a:hover
+{
+    text-decoration: none;
+    color: Maroon;
+    display: block;
+}
+/*--------------------------------------------------------------------------------------- */
+/*---------------------------------------------------------------------------> table edit */
+/*--------------------------------------------------------------------------------------- */
+table.Edit div.text
+{
+    position:relative;
+    font-family:Times New Roman;
+    text-align:justify;
+    min-width:860px;
+    max-width:100%;
+    padding:10px;
+    font-size:14px;
+    line-height:19px;
+    color:#000;
+    -moz-border-radius-bottomleft: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-bottomright: 5px;
+    -webkit-border-bottom-right-radius: 5px;
+}
+table.Edit div.text p
+{
+    font-family:Times New Roman;
+    font-size:1.1em;
+    font-weight:normal;
+    line-height:19px;
+    color:#000;
+}
+table.Edit
+{
+    width: 100%;
+    text-align: left;
+    font-size: 0.9em;
+}
+.black a
+{
+    color:#000;
+}
+.black a:hover
+{
+    color:#0072bb;
+}
+.red
+{
+    color: Red;
+}
+p.red a
+{
+    color: Red;
+}
+p.red a:hover
+{
+    color: Maroon;
+}
+table.Edit p
+{
+    clear: both;
+    display: block;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    font-size: 1.0em;
+    font-weight: bold;
+    color: #095820;
+}
+table.Edit .txtsmall
+{
+    width: 200px;
+    height: 30px;
+    border: 1px solid #338caa;
+}
+table.Edit .txtnumber
+{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #338caa;
+}
+table.Edit .txtNew
+{
+    width: 550px;
+    height: 40px;
+    border: 1px solid #338caa;
+}
+table.Edit .txtNewMin
+{
+    width: 440px;
+    height: 30px;
+    border: 1px solid #338caa;
+}
+table.Edit .txtNewContent
+{
+    width: 550px;
+    height: 70px;
+    border: 1px solid #338caa;
+}
+table.Edit .txt500
+{
+    width: 500px;
+    height: 50px;
+    border: 1px solid #338caa;
+}
+table.Edit .txt30
+{
+    width: 500px;
+    height: 30px;
+    border: 1px solid #338caa;
+}
+table.Edit .txtContent
+{
+    width: 550px;
+    height: 200px;
+    border: 1px solid #338caa;
+}
+table.Edit .txt
+{
+    width: 350px;
+    height: 30px;
+    border: 1px solid #338caa;
+}
+table.Edit .txtdate
+{
+    width: 200px;
+    height: 30px;
+    background-color: White;
+    border: 1px solid #338caa;
+}
+
+table.Edit .txtnd
+{
+    width: 350px;
+    height: 200px;
+    border: 1px solid #338caa;
+}
+table.Edit .btnedit, .multi, table.Edit .multiMonHoc, table.Edit .multiMonHocChon, table.Edit .multiLopHoc, table.Edit .multiLopHocChon
+{
+    width: 90px;
+    margin-right: 10px;
+    height: 30px;
+    color: #fff;
+    background-color: #338caa;
+    border: 1px solid #338caa;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+table.Edit .btn2, .multiOn
+{
+    width: 150px;
+    height: 30px;
+    color: #fff;
+    background-color: #338caa;
+    border: 1px solid #338caa;
+    -khtml-border-radius: 5px; /* Konqueror */
+    -moz-border-radius: 5px; /* Firefox */
+    -webkit-border-radius: 5px; /* Safari & Google Chrome */
+    -border-radius: 5px; /* Opera */
+    box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+table.Edit .btn2:hover,table.Edit .multiOn:hover,table.Edit .btnedit:hover, table.Edit .multi:hover ,table.Edit .multiMonHoc:hover
+,table.Edit .multiMonHocChon:hover,table.Edit .multiLopHoc:hover,table.Edit .multiLopHocChon:hover
+{
+    color: #fff;
+    background-color: #2fa6f2;
+    border: 1px solid #2fa6f2;
+}
+table.Edit ul li
+{
+    background-image: none;
+}
+table.Edit .titletb,table.list .titletb
+{
+    color: Red;
+}
+table.Edit tr td.title
+{
+    width: 100px;
+}
+table.Edit tr td.text
+{
+    width: 200px;
+}
+table.Edit hr
+{
+    clear: both;
+    display: block;
+    border: 1px inherit #338caa;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+table.Edit h4
+{
+    font-size: 0.9em;
+    font-weight: bold;
+    margin: 0;
+    padding: 6px;
+    font-size: 11pt;
+    font-weight: bold;
+    color:#0188c7;
+    background: #ececec;
+}
+.Edit .lock,.list .lock
+{
+    background: url( '../images/checked_out.png') no-repeat;
+    width: 18px;
+    height: 20px;
+    border: 0;
+    margin: 2px;
+}
+table.Edit tr.text td .txteditor
+{
+    clear:both;
+    display:block;
+    width: 100%;
+    height:500px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------> Table list */
+/*-----------------------------------------------------------------------------------*/
+.helpDatHang
+{
+    min-width:150px;
+    height:30px;
+}
+.helpDatHang span
+{
+    margin-right:20px;
+}
+table.list
+{
+    text-align: left;
+    width:100%;
+    max-width: 100%;
+    margin-top: 5px;
+    margin-bottom: 12px;
+}
+.red
+{
+    color:Red;
+}
+.textoverline,a.textoverline
+{
+    text-decoration:line-through;
+}
+table.list tr td .lbtitlemin
+{
+    width: 100px;
+}
+.lnk
+{
+    border: 1px solid #338caa;
+    padding: 2px 8px;
+}
+.list a, .listsmall a
+{
+    text-decoration: none;
+}
+.list th, .listsmall th
+{
+    background-color: #b0b0b0;
+    height: 35px;
+    border-top: 0px;
+}
+.list th.img
+{
+    text-align: left;
+    width: 90px;
+}
+.list td image
+{
+    width: 90px;
+    height: 40px;
+}
+.list tr
+{
+    line-height: 20px;
+    border-top: 1px solid #d0d0d0;
+}
+.list tr.eventop, .listsmall tr.eventop
+{
+    background-color: #eeeeee;
+}
+.list tr.evenbottom, .listsmall tr.evenbottom
+{
+    background-color: #f7f7f7;
+}
+.list th.title, .list td.title, .listsmall th.title, .listsmall td.title
+{
+    text-align: left;
+    width: 350px;
+}
+.list th.titlenew, .list td.titlenew
+{
+    text-align: left;
+    width: 400px;
+}
+.list th.title150, .list td.title150
+{
+    text-align: left;
+    width: 150px;
+}
+.list th.title100, .list td.title100
+{
+    text-align: left;
+    width: 100px;
+}
+.list th.title300, .list td.title300
+{
+    text-align: left;
+    width: 300px;
+}
+.list th.titlemin, .list td.titlemin
+{
+    text-align: left;
+    width: 250px;
+}
+.list th.titlemax, .list td.titlemax
+{
+    text-align: justify;
+    width: 500px;
+}
+.list th.small, .list td.small
+{
+    text-align: left;
+    width: 70px;
+}
+.list th.smallmax, .list td.smallmax
+{
+    text-align: center;
+    width: 150px;
+}
+.list th.idmax, .list td.idmax
+{
+    text-align: center;
+    width: 60px;
+}
+.list th.id, .list td.id
+{
+    text-align: center;
+    width: 30px;
+    font-weight:bold;
+}
+.divlist_acount
+{
+    width:300px;
+    height:20px;
+}
+.divlist_acount h5
+{
+    color:#0082cd;
+    font-size:1em;
+}
+.checkboxemail
+{
+    float:left;
+    margin-right:10px;
+    padding-right:10px;
+}
+/*-----------------------------------------------------------------------------------*/
+/*----------------------------------------------------------------------> Table infor */
+/*-----------------------------------------------------------------------------------*/
+.infor .txttitle
+{
+    width: 600px;
+    height: 30px;
+    border: 1px solid #338caa;
+}
+.infor .txttitlemin
+{
+    width: 400px;
+    height: 30px;
+    border: 1px solid #338caa;
+}
+.infor
+{
+    margin-left: 5px;
+}
