@@ -19,7 +19,15 @@ public partial class Vn_Default : BasePage
             List<BaiViet> listBV = BaiViet.LayTheoIDTheLoai_List("5");
             if (listBV != null && listBV.Count != 0)
             {
-                rptListCuisine.DataSource = listBV;
+                List<BaiViet> listBV1 = new List<BaiViet>();
+                for (int i = 0; i < listBV.Count; i++)
+                {
+                    if (i < 3)
+                        listBV1.Add(listBV.ElementAt(i));
+                    else
+                        break;
+                }
+                rptListCuisine.DataSource = listBV1;
                 rptListCuisine.DataBind();
                 if (Session["lang"].ToString().Equals("vn")) { ltrCtTitle.Text = listBV.First().TenTheLoai_Vn; }
                 else if (Session["lang"].ToString().Equals("en")) { ltrCtTitle.Text = listBV.First().TenTheLoai_En; }

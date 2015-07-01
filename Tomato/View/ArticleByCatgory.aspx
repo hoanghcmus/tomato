@@ -52,7 +52,7 @@
                     </ItemTemplate>
                 </asp:ListView>
 
-                <asp:DataPager ID="ListPager" PagedControlID="rptArticleList" runat="server" PageSize="20" OnPreRender="ListPager_PreRender" class="control-pager">
+                <asp:DataPager ID="ListPager" PagedControlID="rptArticleList" runat="server" PageSize="1" OnPreRender="ListPager_PreRender" class="control-pager">
                     <Fields>
                         <asp:NextPreviousPagerField ButtonType="Link" ShowFirstPageButton="false" ShowPreviousPageButton="true"
                             ShowNextPageButton="false" />

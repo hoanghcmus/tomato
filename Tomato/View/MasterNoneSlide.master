@@ -144,21 +144,21 @@
                     <%-- Link to social network --%>
                     <div class="social-network">
                         <div class="social-item">
-                            <a href="https://facebook.com" class="link">
+                            <a href="https://www.facebook.com/pages/Restaurants-Tomato/769714429789594" target="_blank" class="link">
                                 <div class="social-item-icon">
                                     <img src="/Design/face.png" alt="Facebook" class="img" />
                                 </div>
                             </a>
                         </div>
                         <div class="social-item">
-                            <a href="https://skype.com" class="link">
+                            <a href="https://skype.com" target="_blank" class="link">
                                 <div class="social-item-icon">
                                     <img src="/Design/skype.png" alt="Skype" class="img" />
                                 </div>
                             </a>
                         </div>
                         <div class="social-item">
-                            <a href="https://twitter.com" class="link">
+                            <a href="https://twitter.com" target="_blank" class="link">
                                 <div class="social-item-icon">
                                     <img src="/Design/twitter.png" alt="Twitter" class="img" />
                                 </div>
